@@ -18,9 +18,7 @@ const Hero = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1>Bettter Digital Experience With thinkSopht</h1>
-            <h2>
-              We are team of talanted designers making websites with Bootstrap
-            </h2>
+            <h2>We create stellar software solutions</h2>
             <div>
               <a href="#about" className="btn-get-started scrollto">
                 Get Started

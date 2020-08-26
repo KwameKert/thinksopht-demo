@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../assets/img/about.jpg";
+import group from "../assets/img/group.jpg";
 import AOS from "aos";
 
 AOS.init({

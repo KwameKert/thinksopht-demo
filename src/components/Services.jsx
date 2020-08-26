@@ -85,8 +85,26 @@ const Services = (props) => {
               </p>
             </div>
           </div>
-
           <div
+            className="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 "
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div className="icon-box iconbox-pink">
+              <div className="serImgCon">
+                <GiPencilBrush />
+              </div>
+              <h4>
+                <a href="">Graphics Design</a>
+              </h4>
+              <p>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia
+              </p>
+            </div>
+          </div>
+
+          {/* <div
             className="col-lg-3 col-md-6 d-flex align-items-stretch mt-5 lg "
             data-aos="zoom-in"
             data-aos-delay="100"
@@ -103,7 +121,7 @@ const Services = (props) => {
                 blanditiis
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

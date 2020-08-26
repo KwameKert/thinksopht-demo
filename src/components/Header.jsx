@@ -8,14 +8,14 @@ import React from "react";
 const Header = (props) => {
   return (
     <header id="header" className="fixed-top">
-      <div className="container-fluid">
-        <div className="row justify-content-center">
+      <div className="container-fluid ">
+        <div className="row justify-content-center ">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
               <a href="index.html">thinkSopht</a>
             </h1>
 
-            <nav className="nav-menu d-none d-lg-block">
+            <nav className="nav-menu d-none d-lg-block ">
               <ul>
                 <li className="active">
                   <a href="index.html">Home</a>

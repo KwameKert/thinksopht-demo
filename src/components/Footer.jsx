@@ -1,4 +1,6 @@
 import React from "react";
+import Icon from "@mdi/react";
+import { mdiFacebook, mdiTwitter, mdiInstagram } from "@mdi/js";
 
 /**
  * @author
@@ -8,10 +10,10 @@ import React from "react";
 const Footer = (props) => {
   return (
     <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 footer-contact">
+      <div className="footer-top">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-3 col-md-6 footer-contact">
               <h3>thinkSopht</h3>
               <p>
                 Mango Street <br />
@@ -26,7 +28,7 @@ const Footer = (props) => {
               </p>
             </div>
 
-            <div class="col-lg-2 col-md-6 footer-links">
+            <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -47,7 +49,7 @@ const Footer = (props) => {
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-3 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -66,7 +68,7 @@ const Footer = (props) => {
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-6 footer-newsletter">
+            <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>
                 Tamen quem nulla quae legam multos aute sint culpa legam noster
@@ -81,29 +83,47 @@ const Footer = (props) => {
         </div>
       </div>
 
-      <div class="container">
-        <div class="copyright-wrap d-md-flex py-4">
-          <div class="mr-md-auto text-center text-md-left">
-            <div class="copyright">
+      <div className="container">
+        <div className="copyright-wrap d-md-flex py-4">
+          <div className="mr-md-auto text-center text-md-left">
+            <div className="copyright">
               &copy;{new Date().getFullYear()} thinkSopht|All right
               reserved|Term of Service|Privacy
             </div>
           </div>
-          <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="#" class="twitter">
-              <i class="bx bxl-twitter"></i>
+          <div className="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" className="twitter">
+              <Icon
+                path={mdiTwitter}
+                title="User Profile"
+                size={1}
+                horizontal
+                vertical
+                rotate={180}
+                color="white"
+              />
             </a>
-            <a href="#" class="facebook">
-              <i class="bx bxl-facebook"></i>
+            <a href="#" className="facebook">
+              <Icon
+                path={mdiFacebook}
+                title="User Profile"
+                size={1}
+                horizontal
+                vertical
+                rotate={180}
+                color="white"
+              />
             </a>
-            <a href="#" class="instagram">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="#" class="google-plus">
-              <i class="bx bxl-skype"></i>
-            </a>
-            <a href="#" class="linkedin">
-              <i class="bx bxl-linkedin"></i>
+            <a href="#" className="instagram">
+              <Icon
+                path={mdiInstagram}
+                title="User Profile"
+                size={1}
+                horizontal
+                vertical
+                rotate={180}
+                color="white"
+              />
             </a>
           </div>
         </div>

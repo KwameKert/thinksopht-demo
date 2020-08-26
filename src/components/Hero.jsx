@@ -1,5 +1,10 @@
 import React from "react";
 import hero from "../assets/img/hero-img.png";
+import AOS from "aos";
+
+AOS.init({
+  startEvent: "DOMContentLoaded",
+});
 
 /**
  * @author

@@ -3,6 +3,11 @@ import { GiPencilBrush } from "react-icons/gi";
 import { FaGlobe } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
+import AOS from "aos";
+
+AOS.init({
+  startEvent: "DOMContentLoaded",
+});
 
 /**
  * @author

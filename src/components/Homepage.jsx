@@ -1,4 +1,7 @@
 import React from "react";
+import Header from "./Header";
+import Hero from "./Hero";
+import AboutUs from "./AboutUs";
 
 /**
  * @author
@@ -6,7 +9,13 @@ import React from "react";
  **/
 
 const Homepage = (props) => {
-  return <div>Homepage</div>;
+  return (
+    <div>
+      <Header />
+      <Hero />
+      <AboutUs />
+    </div>
+  );
 };
 
 export default Homepage;

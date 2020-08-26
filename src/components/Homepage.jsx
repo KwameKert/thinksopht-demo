@@ -3,6 +3,9 @@ import Header from "./Header";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
 import Services from "./Services";
+import Footer from "./Footer";
+import Products from "./Products";
+import ContactUs from "../ContactUs";
 
 /**
  * @author
@@ -16,6 +19,9 @@ const Homepage = (props) => {
       <Hero />
       <AboutUs />
       <Services />
+      <Products />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

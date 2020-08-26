@@ -12,7 +12,7 @@ const Header = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
-              <a href="index.html">ThinkSopht</a>
+              <a href="index.html">thinkSopht</a>
             </h1>
 
             <nav className="nav-menu d-none d-lg-block">

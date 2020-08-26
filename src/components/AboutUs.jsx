@@ -23,7 +23,7 @@ const AboutUs = (props) => {
               className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
               data-aos="fade-right"
             >
-              <h3>thinkSopht Labs</h3>
+              <h3 className="text-capitalize">about us</h3>
               <p className="font-italic ">
                 A software consultancy startup driven by innovation and a
                 burning passion to solve problems in society, business, health,

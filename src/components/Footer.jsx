@@ -17,9 +17,8 @@ const Footer = (props) => {
               <h3>thinkSopht</h3>
               <p>
                 Millenium City <br />
-                Kasoa
+                Kasoa,Ghana
                 <br />
-                Ghana <br />
                 <br />
                 <strong>Phone:</strong> +233 204466965
                 <br />

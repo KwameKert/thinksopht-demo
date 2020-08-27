@@ -16,8 +16,8 @@ const Footer = (props) => {
             <div className="col-lg-3 col-md-6 footer-contact">
               <h3>thinkSopht</h3>
               <p>
-                Mango Street <br />
-                Accra
+                Millenium City <br />
+                Kasoa
                 <br />
                 Ghana <br />
                 <br />

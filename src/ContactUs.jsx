@@ -25,7 +25,7 @@ const ContactUs = (props) => {
               <div className="info-box mb-4">
                 <i className="bx bx-map"></i>
                 <h3>Our Address</h3>
-                <p>Mango Street, Accra, GHana</p>
+                <p>Millenium CIty, Kasoa, Ghana</p>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ const ContactUs = (props) => {
             <div className="col-lg-6">
               <iframe
                 className="mb-4 mb-lg-0"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.858236178756!2d-0.43632293255097937!3d5.497816435759519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfba3435d13363%3A0x368e67e916f88811!2sMillennium%20City%20High%20St%2C%20Kasoa!5e0!3m2!1sen!2sgh!4v1598555097840!5m2!1sen!2sgh"
                 frameborder="0"
                 style={{ border: "0", width: "100%", height: "384px" }}
                 allowfullscreen

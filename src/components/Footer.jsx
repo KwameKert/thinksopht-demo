@@ -1,6 +1,9 @@
 import React from "react";
 import Icon from "@mdi/react";
 import { mdiFacebook, mdiTwitter, mdiInstagram } from "@mdi/js";
+import { Link } from "react-router-dom";
+import Opportunities from "./Opportunities";
+import Services from "./Services";
 
 /**
  * @author
@@ -31,19 +34,22 @@ const Footer = (props) => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">About us</a>
+                  <Link to="/About">About us</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link to="/Services">Opportunities</Link>
                 </li>
                 <li>
-                  <a href="#">Terms of service</a>
+                  <Link to="/Products">Products & Services</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy policy</a>
+                  <Link to="#">Terms of service</Link>
+                </li>
+                <li>
+                  <Link to="#">Privacy policy</Link>
                 </li>
               </ul>
             </div>
@@ -52,17 +58,17 @@ const Footer = (props) => {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <a href="#">Mobile</a>
+                  <Link to="/Services">UI Internship</Link>
                 </li>
                 <li>
-                  <a href="#">Web Development</a>
+                  <Link to="Services">Web Development</Link>
                 </li>
 
                 <li>
-                  <a href="#">Digital Marketing</a>
+                  <Link to="Services">Digital Marketing</Link>
                 </li>
                 <li>
-                  <a href="#">Graphic Design</a>
+                  <Link to="Services">Graphic Design</Link>
                 </li>
               </ul>
             </div>
@@ -91,7 +97,7 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="#" className="twitter">
+            <Link to="#" className="twitter">
               <Icon
                 path={mdiTwitter}
                 title="User Profile"
@@ -101,8 +107,8 @@ const Footer = (props) => {
                 rotate={180}
                 color="white"
               />
-            </a>
-            <a href="#" className="facebook">
+            </Link>
+            <Link to="#" className="facebook">
               <Icon
                 path={mdiFacebook}
                 title="User Profile"
@@ -112,8 +118,8 @@ const Footer = (props) => {
                 rotate={180}
                 color="white"
               />
-            </a>
-            <a href="#" className="instagram">
+            </Link>
+            <Link to="#" className="instagram">
               <Icon
                 path={mdiInstagram}
                 title="User Profile"
@@ -123,7 +129,7 @@ const Footer = (props) => {
                 rotate={180}
                 color="white"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

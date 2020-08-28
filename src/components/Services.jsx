@@ -4,6 +4,7 @@ import { FaGlobe } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
 import AOS from "aos";
+import Opportunities from "./Opportunities";
 
 AOS.init({
   startEvent: "DOMContentLoaded",
@@ -19,7 +20,7 @@ const Services = (props) => {
     <section id="services" className="services section-bg">
       <div className="container service-container" data-aos="fade-up">
         <div className="section-title">
-          <h2>Services</h2>
+          <h2>Opportunities</h2>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
             aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
@@ -39,7 +40,7 @@ const Services = (props) => {
                 <AiOutlineMobile />
               </div>
               <h4>
-                <a href="">Mobile Development</a>
+                <a href="">UI Internship</a>
               </h4>
               <p>
                 Voluptatum deleniti atque corrupti quos dolores et quas

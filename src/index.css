@@ -91,6 +91,9 @@ h6 {
     transform: rotate(360deg);
   }
 }
+.inputspace {
+  width: 600px;
+}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
@@ -458,10 +461,10 @@ section {
   background-size: cover;
 }
 
-#hero .container,
+/* #hero .container,
 #hero .container-fluid {
   padding-top: 84px;
-}
+} */
 
 #hero h1 {
   margin: 0;
@@ -585,7 +588,7 @@ section {
   padding: 120px 0;
 }
 
-.about .content h3 {
+.about .content h5 {
   font-weight: 600;
   font-size: 32px;
   color: #2c4964;

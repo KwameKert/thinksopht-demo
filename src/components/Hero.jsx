@@ -1,6 +1,7 @@
 import React from "react";
 import hero from "../assets/img/hero-img.png";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 AOS.init({
   startEvent: "DOMContentLoaded",
@@ -20,9 +21,9 @@ const Hero = (props) => {
             <h1>Bettter Digital Experience With thinkSopht</h1>
             <h2>We create stellar software solutions</h2>
             <div>
-              <a href="#about" className="btn-get-started scrollto">
-                Get Started
-              </a>
+              <Link href="#about" className="btn-get-started scrollto">
+                Read More
+              </Link>
             </div>
           </div>
           <div

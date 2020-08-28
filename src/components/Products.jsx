@@ -25,7 +25,7 @@ const Products = (props) => {
       <section id="portfolio" className="portfolio">
         <div className="container" data-aos="fade-up">
           <div className="section-title">
-            <h2>Product</h2>
+            <h2>Product & Services</h2>
             <p>
               Magnam dolores commodi suscipit. Necessitatibus eius consequatur
               ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
@@ -52,7 +52,7 @@ const Products = (props) => {
               <div className="portfolio-wrap">
                 <img src={portfolio1} className="img-fluid" alt="" />
                 <div className="portfolio-info">
-                  <h4>App 1</h4>
+                  <h4>Edify</h4>
                   <p>App</p>
                 </div>
                 <div className="portfolio-links">
@@ -75,7 +75,7 @@ const Products = (props) => {
               <div className="portfolio-wrap">
                 <img src={portfolio2} className="img-fluid" alt="" />
                 <div className="portfolio-info">
-                  <h4>Web 3</h4>
+                  <h4>Happy</h4>
                   <p>Web</p>
                 </div>
                 <div className="portfolio-links">
@@ -98,7 +98,7 @@ const Products = (props) => {
               <div className="portfolio-wrap">
                 <img src={portfolio3} className="img-fluid" alt="" />
                 <div className="portfolio-info">
-                  <h4>App 2</h4>
+                  <h4>Safehands</h4>
                   <p>App</p>
                 </div>
                 <div className="portfolio-links">
@@ -121,7 +121,7 @@ const Products = (props) => {
               <div className="portfolio-wrap">
                 <img src={portfolio4} className="img-fluid" alt="" />
                 <div className="portfolio-info">
-                  <h4>Card 2</h4>
+                  <h4>Razor</h4>
                   <p>Card</p>
                 </div>
                 <div className="portfolio-links">

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import Opportunities from "./Opportunities";
+import Services from "./Services";
 
 /**
  * @author
@@ -19,37 +21,23 @@ const Header = (props) => {
             <nav className="nav-menu d-none d-lg-block ">
               <ul>
                 <li className="active">
-                  <NavLink exact to="/index.html">
-                    Home
-                  </NavLink>
+                  <Link to="/index.html">Home</Link>
                 </li>
                 <li>
-                  <NavLink exact to="/about">
-                    About
-                  </NavLink>
+                  <Link to="/About">About</Link>
                 </li>
                 <li>
-                  <NavLink exact to="/services">
-                    Products & Services
-                  </NavLink>
+                  <Link to="/Services">Opportunities</Link>
                 </li>
                 <li>
-                  <NavLink exact to="/portfolio">
-                    Opprtunities
-                  </NavLink>
+                  <Link to="/products">Products & Services</Link>
                 </li>
 
                 <li>
-                  <NavLink exact to="/contact">
-                    Contact
-                  </NavLink>
+                  <Link to="/ContactUs">Contact Us</Link>
                 </li>
               </ul>
             </nav>
-
-            <Link to="/about" className="get-started-btn scrollto">
-              Get Started
-            </Link>
           </div>
         </div>
       </div>

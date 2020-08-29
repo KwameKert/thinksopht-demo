@@ -21,7 +21,7 @@ const Hero = (props) => {
             <h1>Bettter Digital Experience With thinkSopht</h1>
             <h2>We create stellar software solutions</h2>
             <div>
-              <Link href="#about" className="btn-get-started scrollto">
+              <Link to="/about" className="btn-get-started scrollto">
                 Read More
               </Link>
             </div>

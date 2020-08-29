@@ -18,23 +18,23 @@ const Header = (props) => {
               <Link href="index.html">thinkSopht</Link>
             </h1>
 
-            <nav className="nav-menu d-none d-lg-block ">
+            <nav className="nav-menu d-none d-lg-block  ">
               <ul>
                 <li className="active">
-                  <Link to="/index.html">Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/About">About</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/Services">Opportunities</Link>
+                  <Link to="/services">Opportunities</Link>
                 </li>
                 <li>
                   <Link to="/products">Products & Services</Link>
                 </li>
 
                 <li>
-                  <Link to="/ContactUs">Contact Us</Link>
+                  <Link to="/contactUs">Contact Us</Link>
                 </li>
               </ul>
             </nav>

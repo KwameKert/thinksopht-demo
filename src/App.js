@@ -14,16 +14,16 @@ import Products from "./components/Products";
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/about" component={AboutUs} />
-        <Route exact path="/header" component={Header} />
         <Route exact path="/contactus" component={ContactUs} />
         <Route exact path="/hero" component={Hero} />
         <Route exact path="/services" component={Services} />
         <Route exact path="/products" component={Products} />
-        <Route exact path="/footer" component={Footer} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }

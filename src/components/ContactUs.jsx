@@ -1,4 +1,15 @@
 import React from "react";
+import Icon from "@mdi/react";
+import {
+  mdiFacebook,
+  mdiTwitter,
+  mdiInstagram,
+  mdiLockAlert,
+  mdiPhone,
+  mdiEmail,
+  mdiLocationEnter,
+  mdiMapMarker,
+} from "@mdi/js";
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -68,7 +79,15 @@ class ContactUs extends React.Component {
           <div class="row">
             <div class="col-lg-6">
               <div class="info-box mb-4">
-                <i class="bx bx-map"></i>
+                <Icon
+                  path={mdiMapMarker}
+                  title="User Profile"
+                  size={2}
+                  horizontal
+                  vertical
+                  rotate={180}
+                  color="blue"
+                />
                 <h3>Our Address</h3>
                 <p>Millennium City Street, Kasoa, Ghana</p>
               </div>
@@ -76,7 +95,15 @@ class ContactUs extends React.Component {
 
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
-                <i class="bx bx-envelope"></i>
+                <Icon
+                  path={mdiEmail}
+                  title="User Profile"
+                  size={2}
+                  horizontal
+                  vertical
+                  rotate={180}
+                  color="blue"
+                />
                 <h3>Email Us</h3>
                 <p>thinkSopht@gmail.com</p>
               </div>
@@ -84,7 +111,15 @@ class ContactUs extends React.Component {
 
             <div class="col-lg-3 col-md-6">
               <div class="info-box mb-4">
-                <i class="bx bx-phone-call"></i>
+                <Icon
+                  path={mdiPhone}
+                  title="User Profile"
+                  size={2}
+                  horizontal
+                  vertical
+                  rotate={180}
+                  color="blue"
+                />
                 <h3>Call Us</h3>
                 <p>+233 204466965</p>
               </div>

@@ -45,6 +45,10 @@ h6 {
   background: #7b27d8;
   color: #fff;
 }
+.btn-primary {
+  color: color;
+  background-color: #244887;
+}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -111,6 +115,7 @@ section {
 
 .section-bg {
   background-color: #f9f8ff;
+  min-height: 100vh;
 }
 
 .section-title {
@@ -133,7 +138,12 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #5846f9;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -145,11 +155,20 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  /* background: #6f42c1; */
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  opacity: 0.9;
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(24, 6, 185, 0.8);
+  /* background: red; */
 
   padding: 12px 0;
 }
@@ -452,11 +471,7 @@ section {
 #hero {
   width: 100%;
   height: 80vh;
-  background: linear-gradient(
-      45deg,
-      rgba(86, 58, 250, 0.9) 0%,
-      rgba(116, 15, 214, 0.9) 100%
-    ),
+  background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%),
     url("../src/assets/img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
 }
@@ -586,6 +601,7 @@ section {
 }
 .about {
   padding: 120px 0;
+  min-height: 100vh;
 }
 
 .about .content h5 {
@@ -623,7 +639,12 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(45deg, #5846f9 0%, #7b27d8 100%);
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   position: relative;
 }
 
@@ -670,6 +691,7 @@ section {
 .services .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
+  min-height: 100vh;
 }
 
 .services .icon-box h4 {

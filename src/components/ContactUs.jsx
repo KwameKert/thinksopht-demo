@@ -86,7 +86,7 @@ class ContactUs extends React.Component {
                   horizontal
                   vertical
                   rotate={180}
-                  color="blue"
+                  color="244887"
                 />
                 <h3>Our Address</h3>
                 <p>Millennium City Street, Kasoa, Ghana</p>
@@ -102,7 +102,7 @@ class ContactUs extends React.Component {
                   horizontal
                   vertical
                   rotate={180}
-                  color="blue"
+                  color="244887"
                 />
                 <h3>Email Us</h3>
                 <p>thinkSopht@gmail.com</p>
@@ -118,7 +118,7 @@ class ContactUs extends React.Component {
                   horizontal
                   vertical
                   rotate={180}
-                  color="blue"
+                  color="244887"
                 />
                 <h3>Call Us</h3>
                 <p>+233 204466965</p>
@@ -201,7 +201,12 @@ class ContactUs extends React.Component {
                   </div>
                   <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
-                <button type="submit">Submit</button>
+                <button
+                  type="submit"
+                  className="btn btn-primary mt-5 read-more"
+                >
+                  Submit
+                </button>
               </form>
             </div>
             <div className="col-lg-6">

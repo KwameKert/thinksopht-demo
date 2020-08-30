@@ -21,6 +21,9 @@ const AboutUs = (props) => {
   return (
     <section id="about" className="about">
       <div className="container">
+        <div className="row section-title">
+          <h2>About Us</h2>
+        </div>
         <div className="row">
           <div
             className="col-lg-6 order-1 order-lg-2"
@@ -36,7 +39,7 @@ const AboutUs = (props) => {
             <h5>thinkSopht Labs is a software consultancy startup.</h5>
 
             <ul className="mt-5">
-              <li>
+              <li className="mt-3">
                 <Icon
                   path={mdiCheckCircleOutline}
                   title="User Profile"
@@ -44,13 +47,13 @@ const AboutUs = (props) => {
                   horizontal
                   vertical
                   rotate={180}
-                  color="purple"
+                  color="244887"
                 />{" "}
                 Invent: we are constantly pre-thinking what else could be done
                 and inventing the solutions for future problems. That’s our idea
                 of constant improvement.
               </li>
-              <li>
+              <li className="mt-3">
                 <Icon
                   path={mdiCheckCircleOutline}
                   title="User Profile"
@@ -58,12 +61,12 @@ const AboutUs = (props) => {
                   horizontal
                   vertical
                   rotate={180}
-                  color="purple"
+                  color="244887"
                 />{" "}
                 Integrity: we do what we say we do when we say we will do it,
                 the way it should be done.
               </li>
-              <li>
+              <li className="mt-3">
                 <Icon
                   path={mdiCheckCircleOutline}
                   title="User Profile"
@@ -71,13 +74,13 @@ const AboutUs = (props) => {
                   horizontal
                   vertical
                   rotate={180}
-                  color="purple"
+                  color="244887"
                 />{" "}
                 Speed: in today’s competitive world of business and
                 fast-evolving technology, speed is no longer a plus. It is the
                 minimum requirement for admission to the game.
               </li>
-              <li>
+              <li className="mt-3">
                 <Icon
                   path={mdiCheckCircleOutline}
                   title="User Profile"
@@ -85,14 +88,14 @@ const AboutUs = (props) => {
                   horizontal
                   vertical
                   rotate={180}
-                  color="purple"
+                  color="244887"
                 />{" "}
                 Friendly-family: Beyond the transaction, we look to building
                 lifelong relationships with our clients and partners to continue
                 to provide support for long term success.
               </li>
             </ul>
-            <Link to="/" className="read-more">
+            <Link to="/" className="read-more mt-5">
               Read More <i className="icofont-long-arrow-right"></i>
             </Link>
           </div>

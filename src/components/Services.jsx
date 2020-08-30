@@ -19,7 +19,7 @@ const Services = (props) => {
   return (
     <section id="services" className="services section-bg">
       <div className="container service-container" data-aos="fade-up">
-        <div className="section-title">
+        <div className="section-title ">
           <h2>Opportunities</h2>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
@@ -29,7 +29,7 @@ const Services = (props) => {
           </p>
         </div>
 
-        <div className="row">
+        <div className="row mt-5">
           <div
             className="col-lg-3 col-md-6 d-flex align-items-stretch shadow"
             data-aos="zoom-in"

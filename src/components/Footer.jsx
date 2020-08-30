@@ -16,7 +16,7 @@ const Footer = (props) => {
       <div className="footer-top">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 footer-contact">
+            <div className="col-lg-4 col-md-6 footer-contact">
               <h3>thinkSopht</h3>
               <p>
                 Millenium City <br />
@@ -30,7 +30,7 @@ const Footer = (props) => {
               </p>
             </div>
 
-            <div className="col-lg-2 col-md-6 footer-links">
+            <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -54,7 +54,7 @@ const Footer = (props) => {
               </ul>
             </div>
 
-            <div className="col-lg-3 col-md-6 footer-links">
+            <div className="col-lg-4 col-md-6 footer-links">
               <h4>Our Services</h4>
               <ul>
                 <li>
@@ -71,18 +71,6 @@ const Footer = (props) => {
                   <Link to="Services">Graphic Design</Link>
                 </li>
               </ul>
-            </div>
-
-            <div className="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
-              </p>
-              <form action="" method="post">
-                <input type="email" name="email" />
-                <input type="submit" value="Subscribe" />
-              </form>
             </div>
           </div>
         </div>

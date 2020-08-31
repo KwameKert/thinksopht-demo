@@ -220,6 +220,19 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+.navIndex a {
+  text-decoration: none;
+}
+.navIndex a:hover {
+  text-decoration: underline;
+}
+.navIndex a:active,
+a:focus {
+  text-decoration: underline;
+  color: white;
+  font-weight: bolder;
+}
+
 .nav-menu ul {
   margin: 0;
   padding: 0;

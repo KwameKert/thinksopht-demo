@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 /**
  * @author
@@ -13,31 +13,31 @@ const Header = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
-              <NavLink className to="/">
+              <Link style={{ textDecoration: "none" }} to="/">
                 thinkSopht
-              </NavLink>
+              </Link>
             </h1>
 
-            <nav className=" navIndex">
-              <NavLink activeClassName="selected" exact to="/">
+            <nav className="navIndex">
+              <Link exact to="/">
                 Home
-              </NavLink>
+              </Link>
 
-              <NavLink activeClassName="selected" exact to="/about">
+              <Link exact to="/about">
                 About
-              </NavLink>
+              </Link>
 
-              <NavLink activeClassName="selected" exact to="/services">
+              <Link exact to="/services">
                 Opportunities
-              </NavLink>
+              </Link>
 
-              <NavLink activeClassName="selected" exact to="/products">
+              <Link exact to="/products">
                 Products & Services
-              </NavLink>
+              </Link>
 
-              <NavLink activeClassName="selected" exact to="/contactUs">
+              <Link exact to="/contactUs">
                 Contact Us
-              </NavLink>
+              </Link>
             </nav>
           </div>
         </div>

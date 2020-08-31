@@ -4,7 +4,6 @@ import { FaGlobe } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
 import AOS from "aos";
-import Opportunities from "./Opportunities";
 
 AOS.init({
   startEvent: "DOMContentLoaded",
@@ -37,11 +36,9 @@ const Services = (props) => {
           >
             <div className="icon-box iconbox-blue">
               <div className="serImgCon">
-                <AiOutlineMobile />
+                <AiOutlineMobile className="icon-red" />
               </div>
-              <h4>
-                <a href="">UI Internship</a>
-              </h4>
+              <h4>UI Internship</h4>
               <p>
                 Voluptatum deleniti atque corrupti quos dolores et quas
                 molestias excepturi
@@ -56,11 +53,9 @@ const Services = (props) => {
           >
             <div className="icon-box iconbox-orange">
               <div className="serImgCon">
-                <MdComputer />
+                <MdComputer className="icon-blue" />
               </div>
-              <h4>
-                <a href="">Web Development</a>
-              </h4>
+              <h4>Web Development</h4>
               <p>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore
@@ -75,11 +70,9 @@ const Services = (props) => {
           >
             <div className="icon-box iconbox-pink">
               <div className="serImgCon">
-                <FaGlobe />
+                <FaGlobe className="icon-green" />
               </div>
-              <h4>
-                <a href="">Digital Marketing</a>
-              </h4>
+              <h4>Digital Marketing</h4>
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia
@@ -93,11 +86,9 @@ const Services = (props) => {
           >
             <div className="icon-box iconbox-pink">
               <div className="serImgCon">
-                <GiPencilBrush />
+                <GiPencilBrush className="icon-orange" />
               </div>
-              <h4>
-                <a href="">Graphics Design</a>
-              </h4>
+              <h4>Graphics Design</h4>
               <p>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
                 qui officia

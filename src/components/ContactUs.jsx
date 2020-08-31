@@ -1,15 +1,6 @@
 import React from "react";
 import Icon from "@mdi/react";
-import {
-  mdiFacebook,
-  mdiTwitter,
-  mdiInstagram,
-  mdiLockAlert,
-  mdiPhone,
-  mdiEmail,
-  mdiLocationEnter,
-  mdiMapMarker,
-} from "@mdi/js";
+import { mdiPhone, mdiEmail, mdiMapMarker } from "@mdi/js";
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -212,6 +203,7 @@ class ContactUs extends React.Component {
             <div className="col-lg-6">
               <iframe
                 className="mb-4 mb-lg-0"
+                title="location_map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.858236178756!2d-0.43632293255097937!3d5.497816435759519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfba3435d13363%3A0x368e67e916f88811!2sMillennium%20City%20High%20St%2C%20Kasoa!5e0!3m2!1sen!2sgh!4v1598555097840!5m2!1sen!2sgh"
                 frameborder="0"
                 style={{ border: "0", width: "100%", height: "384px" }}

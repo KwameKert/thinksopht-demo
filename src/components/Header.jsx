@@ -1,7 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import Opportunities from "./Opportunities";
-import Services from "./Services";
+import { NavLink } from "react-router-dom";
 
 /**
  * @author
@@ -15,28 +13,31 @@ const Header = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
-              <Link to="/">thinkSopht</Link>
+              <NavLink className to="/">
+                thinkSopht
+              </NavLink>
             </h1>
 
-            <nav className="nav-menu d-none d-lg-block  ">
-              <ul>
-                <li className="active">
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/services">Opportunities</Link>
-                </li>
-                <li>
-                  <Link to="/products">Products & Services</Link>
-                </li>
+            <nav className=" navIndex">
+              <NavLink activeClassName="selected" exact to="/">
+                Home
+              </NavLink>
 
-                <li>
-                  <Link to="/contactUs">Contact Us</Link>
-                </li>
-              </ul>
+              <NavLink activeClassName="selected" exact to="/about">
+                About
+              </NavLink>
+
+              <NavLink activeClassName="selected" exact to="/services">
+                Opportunities
+              </NavLink>
+
+              <NavLink activeClassName="selected" exact to="/products">
+                Products & Services
+              </NavLink>
+
+              <NavLink activeClassName="selected" exact to="/contactUs">
+                Contact Us
+              </NavLink>
             </nav>
           </div>
         </div>

@@ -1,12 +1,9 @@
 import React from "react";
 import aboutImg from "../assets/img/about.jpg";
-import Header from "../components/Header";
-import group from "../assets/img/group.jpg";
 import AOS from "aos";
 import Icon from "@mdi/react";
 import { mdiCheckCircleOutline } from "@mdi/js";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
 
 AOS.init({
   startEvent: "DOMContentLoaded",

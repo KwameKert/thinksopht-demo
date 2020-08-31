@@ -18,24 +18,24 @@ const Header = (props) => {
               </NavLink>
             </h1>
 
-            <nav className="justify content-between navIndex">
-              <NavLink activeClassName="selected" to="/">
+            <nav className=" navIndex">
+              <NavLink activeClassName="selected" exact to="/">
                 Home
               </NavLink>
 
-              <NavLink activeClassName="selected" to="/about">
+              <NavLink activeClassName="selected" exact to="/about">
                 About
               </NavLink>
 
-              <NavLink activeClassName="selected" to="/services">
+              <NavLink activeClassName="selected" exact to="/services">
                 Opportunities
               </NavLink>
 
-              <NavLink activeClassName="selected" to="/products">
+              <NavLink activeClassName="selected" exact to="/products">
                 Products & Services
               </NavLink>
 
-              <NavLink activeClassName="selected" to="/contactUs">
+              <NavLink activeClassName="selected" exact to="/contactUs">
                 Contact Us
               </NavLink>
             </nav>

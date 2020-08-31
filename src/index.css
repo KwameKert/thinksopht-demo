@@ -206,6 +206,11 @@ section {
   text-decoration-style: none;
   list-style: none;
 }
+.nav-bar {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding-right: 30px;
+}
 /* .nav NavLinks {
   color: white;
   justify-content: space-evenly;

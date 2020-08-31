@@ -2,8 +2,6 @@ import React from "react";
 import Icon from "@mdi/react";
 import { mdiFacebook, mdiTwitter, mdiInstagram } from "@mdi/js";
 import { Link } from "react-router-dom";
-import Opportunities from "./Opportunities";
-import Services from "./Services";
 
 /**
  * @author

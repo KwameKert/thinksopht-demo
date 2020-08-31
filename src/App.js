@@ -6,7 +6,6 @@ import AboutUs from "./components/AboutUs";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
-import Opportunities from "./components/Opportunities";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import Products from "./components/Products";

@@ -34,7 +34,7 @@ const Products = (props) => {
             </p>
           </div>
 
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
                 <li data-filter="*" className="filter-active">
@@ -45,7 +45,7 @@ const Products = (props) => {
                 <li data-filter=".filter-web">Web</li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <div className="row portfolio-container">
             <div className="col-lg-4 col-md-6 portfolio-item filter-app">

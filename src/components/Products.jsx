@@ -1,14 +1,6 @@
 import React from "react";
 import AOS from "aos";
 import portfolio1 from "../assets/img/portfolio/portfolio-1.jpg";
-import portfolio2 from "../assets/img/portfolio/portfolio-2.jpg";
-import portfolio3 from "../assets/img/portfolio/portfolio-3.jpg";
-import portfolio4 from "../assets/img/portfolio/portfolio-4.jpg";
-import portfolio5 from "../assets/img/portfolio/portfolio-5.jpg";
-import portfolio6 from "../assets/img/portfolio/portfolio-6.jpg";
-import portfolio7 from "../assets/img/portfolio/portfolio-7.jpg";
-import portfolio8 from "../assets/img/portfolio/portfolio-8.jpg";
-import portfolio9 from "../assets/img/portfolio/portfolio-9.jpg";
 
 AOS.init({
   startEvent: "DOMContentLoaded",
@@ -71,7 +63,119 @@ const Products = (props) => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={portfolio1} className="img-fluid" alt="" />
+                <div className="portfolio-info">
+                  <h4>Happy</h4>
+                  <p>App</p>
+                </div>
+                <div className="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/portfolio-1.jpg"
+                    data-gall="portfolioGallery"
+                    className="venobox"
+                    title="App 1"
+                  >
+                    <i className="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" title="More Details">
+                    <i className="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={portfolio1} className="img-fluid" alt="" />
+                <div className="portfolio-info">
+                  <h4>Razor</h4>
+                  <p>App</p>
+                </div>
+                <div className="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/portfolio-1.jpg"
+                    data-gall="portfolioGallery"
+                    className="venobox"
+                    title="App 1"
+                  >
+                    <i className="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" title="More Details">
+                    <i className="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={portfolio1} className="img-fluid" alt="" />
+                <div className="portfolio-info">
+                  <h4>Edify</h4>
+                  <p>App</p>
+                </div>
+                <div className="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/portfolio-1.jpg"
+                    data-gall="portfolioGallery"
+                    className="venobox"
+                    title="App 1"
+                  >
+                    <i className="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" title="More Details">
+                    <i className="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={portfolio1} className="img-fluid" alt="" />
+                <div className="portfolio-info">
+                  <h4>Happy</h4>
+                  <p>App</p>
+                </div>
+                <div className="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/portfolio-1.jpg"
+                    data-gall="portfolioGallery"
+                    className="venobox"
+                    title="App 1"
+                  >
+                    <i className="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" title="More Details">
+                    <i className="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div className="portfolio-wrap">
+                <img src={portfolio1} className="img-fluid" alt="" />
+                <div className="portfolio-info">
+                  <h4>Edify</h4>
+                  <p>App</p>
+                </div>
+                <div className="portfolio-links">
+                  <a
+                    href="assets/img/portfolio/portfolio-1.jpg"
+                    data-gall="portfolioGallery"
+                    className="venobox"
+                    title="App 1"
+                  >
+                    <i className="bx bx-plus"></i>
+                  </a>
+                  <a href="portfolio-details.html" title="More Details">
+                    <i className="bx bx-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="col-lg-4 col-md-6 portfolio-item filter-web">
               <div className="portfolio-wrap">
                 <img src={portfolio2} className="img-fluid" alt="" />
                 <div className="portfolio-info">
@@ -92,9 +196,9 @@ const Products = (props) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-lg-4 col-md-6 portfolio-item filter-app">
+            {/* <div className="col-lg-4 col-md-6 portfolio-item filter-app">
               <div className="portfolio-wrap">
                 <img src={portfolio3} className="img-fluid" alt="" />
                 <div className="portfolio-info">
@@ -115,9 +219,9 @@ const Products = (props) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-lg-4 col-md-6 portfolio-item filter-card">
+            {/* <div className="col-lg-4 col-md-6 portfolio-item filter-card">
               <div className="portfolio-wrap">
                 <img src={portfolio4} className="img-fluid" alt="" />
                 <div className="portfolio-info">
@@ -253,7 +357,7 @@ const Products = (props) => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

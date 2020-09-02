@@ -78,8 +78,8 @@ const Footer = (props) => {
         <div className="copyright-wrap d-md-flex py-4">
           <div className="mr-md-auto text-center text-md-left">
             <div className="copyright">
-              &copy;{new Date().getFullYear()} thinkSopht|All right
-              reserved|Term of Service|Privacy
+              &copy;{new Date().getFullYear()} thinkSopht | All right reserved |
+              Term of Service | Privacy
             </div>
           </div>
           <div className="social-links text-center text-md-right pt-3 pt-md-0">

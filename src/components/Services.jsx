@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiPencilBrush } from "react-icons/gi";
 import { FaGlobe } from "react-icons/fa";
 import { AiOutlineMobile } from "react-icons/ai";
 import { MdComputer } from "react-icons/md";
+import { Modal, Card } from "react-bootstrap";
 import AOS from "aos";
 
 AOS.init({
@@ -15,9 +16,11 @@ AOS.init({
  **/
 
 const Services = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section id="services" className="services section-bg">
-      <div className="container service-container" data-aos="fade-up">
+      <div className="container service-container mx-auto" data-aos="fade-up">
         <div className="section-title ">
           <h2>Opportunities</h2>
           <p>
@@ -28,11 +31,12 @@ const Services = (props) => {
           </p>
         </div>
 
-        <div className="row mt-5">
-          <div
+        <div className="row mt-5 cursor:pointer">
+          <Card
             className="col-lg-3 col-md-6 d-flex align-items-stretch shadow"
             data-aos="zoom-in"
             data-aos-delay="100"
+            onClick={() => setShowModal(true)}
           >
             <div className="icon-box iconbox-blue">
               <div className="serImgCon">
@@ -43,8 +47,14 @@ const Services = (props) => {
                 Voluptatum deleniti atque corrupti quos dolores et quas
                 molestias excepturi
               </p>
+              <Modal show={showModal} onHide={() => setShowModal(false)}>
+                <Modal.Header closeButton>
+                  <Modal.Title>UI internship application</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>form</Modal.Body>
+              </Modal>
             </div>
-          </div>
+          </Card>
 
           <div
             className="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 "

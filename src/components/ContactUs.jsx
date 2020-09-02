@@ -1,6 +1,11 @@
 import React from "react";
+import AOS from "aos";
 import Icon from "@mdi/react";
 import { mdiPhone, mdiEmail, mdiMapMarker } from "@mdi/js";
+
+AOS.init({
+  startEvent: "DOMContentLoaded",
+});
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -57,7 +62,7 @@ class ContactUs extends React.Component {
   render() {
     return (
       <section id="contact" className="contact section-bg">
-        <div className="container" data-aos="fade-up">
+        <div className="container " data-aos="fade-up" data-aos-duration="1000">
           <div className="section-title">
             <h2>Contact Us</h2>
             <p>
@@ -67,7 +72,7 @@ class ContactUs extends React.Component {
               Quia fugiat sit in iste officiis commodi quidem hic quas.
             </p>
           </div>
-          <div class="row">
+          <div class="row d-flex flex-row">
             <div class="col-lg-6">
               <div class="info-box mb-4">
                 <Icon
@@ -117,13 +122,18 @@ class ContactUs extends React.Component {
             </div>
           </div>
 
-          <div className="row mx-auto">
+          <div className="row ">
             <div className="col-lg-6">
-              <form className="" onSubmit={this.handleSubmit} method="POST">
-                <div className="row">
+              <form
+                className="bg-white p-4 shadow"
+                onSubmit={this.handleSubmit}
+                method="POST "
+              >
+                <div className="row ">
                   <div className="form-group inputspace ">
-                    <label htmlFor="fullname">Fullname</label>
+                    {/* <label htmlFor="fullname">Fullname</label> */}
                     <input
+                      placeholder="Fullname"
                       //ref={register}
                       type="text"
                       id="fullname"
@@ -134,10 +144,10 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
                   <div className="form-group inputspace">
-                    <label htmlFor="email">Email</label>
                     <input
+                      placeholder="Email"
                       //ref={register}
                       type="text"
                       id="email"
@@ -148,10 +158,10 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="row">
+                {/* <div className="row mt-3">
                   <div className="form-group inputspace ">
-                    <label htmlFor="phoneNumber">Phone Number</label>
                     <input
+                      placeholder="phone number"
                       //ref={register}
                       type="text"
                       id="phoneNumber"
@@ -161,11 +171,11 @@ class ContactUs extends React.Component {
                       className="form-control"
                     />
                   </div>
-                </div>
-                <div className="row">
+                </div> */}
+                <div className="row mt-3">
                   <div className="form-group inputspace ">
-                    <label htmlFor="subject">Subject</label>
                     <input
+                      placeholder="Subject"
                       //ref={register}
                       type="text"
                       id="subject"
@@ -176,28 +186,30 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
                   <div className="form-group ">
-                    <label htmlFor="message">Message</label>
                     <textarea
+                      placeholder="Message"
                       //ref={register}
                       type="text"
                       id="message"
                       name="message"
-                      className="form-control inputspace"
+                      className="form-control text-input"
                       value={this.state.message}
                       onChange={this.handleChange}
-                      rows="5"
+                      rows="4"
                     />
                   </div>
                   <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary mt-5 read-more"
-                >
-                  Submit
-                </button>
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    className="btn btn-primary mt-4  read-more"
+                  >
+                    Submit
+                  </button>
+                </div>
               </form>
             </div>
             <div className="col-lg-6">

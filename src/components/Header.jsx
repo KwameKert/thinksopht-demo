@@ -36,9 +36,9 @@ const Header = (props) => {
                 </li>
               </ul>
             </nav>
-            <a href="#about" class="get-started-btn scrollto">
+            {/* <a href="#about" class="get-started-btn scrollto">
               Get Started
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

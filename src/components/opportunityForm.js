@@ -69,8 +69,8 @@ export default class OpportunityForm extends Component {
   render() {
     return (
       <>
-        <Button className=" p-3 apply-form" onClick={this.handleOpen}>
-          Apply For Opportunities Now!
+        <Button className="  apply-form" onClick={this.handleOpen}>
+          Apply Now!
         </Button>
         <Modal show={this.state.show} onHide={this.handleClose}>
           <Modal.Header closeButton>
@@ -78,10 +78,10 @@ export default class OpportunityForm extends Component {
           </Modal.Header>
           <Modal.Body>
             <form onSubmit={this.handleSubmit} method="POST " className="">
-              <div className="row">
+              <div className="row mt-3">
                 <div className="form-group">
-                  <label>Full Name</label>
                   <input
+                    placeholder="Full Name"
                     name="fullname"
                     className="form-control"
                     value={this.state.fullname}
@@ -89,10 +89,10 @@ export default class OpportunityForm extends Component {
                   />
                 </div>
               </div>
-              <div className="row">
+              <div className="row mt-3">
                 <div className="form-group">
-                  <label>Email address</label>
                   <input
+                    placeholder="Email"
                     name="email"
                     className="form-control"
                     value={this.state.email}
@@ -100,10 +100,10 @@ export default class OpportunityForm extends Component {
                   />
                 </div>
               </div>
-              <div className="row">
+              <div className="row mt-3">
                 <div className="form-group">
-                  <label>Phone Number</label>
                   <input
+                    placeholder="Phone Number"
                     name="phoneNumber"
                     className="form-control"
                     value={this.state.phoneNumber}
@@ -112,27 +112,28 @@ export default class OpportunityForm extends Component {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row  opportunityForm mt-3">
                 <div className="form-group">
-                  <label for="sel1">Select category applying for</label>
                   <select class="form-control" id="sel1">
+                    <option>Select Category</option>
+
                     <option>UI Internship</option>
                     <option>Web Development</option>
                     <option>Digital Marketing</option>
                     <option>Graphics Design</option>
 
                     <input
+                      placeholder="Select Category"
                       name="category"
-                      className="form-control"
+                      className="form-control opportunityForm"
                       value={this.state.category}
                       onChange={this.handleChange}
                     />
                   </select>
                 </div>
               </div>
-              <div className="row">
+              <div className="row mt-3">
                 <div className=" form-group">
-                  <label>Upload file </label>
                   <input
                     name="file"
                     type="file"

@@ -1,6 +1,7 @@
 import React from "react";
 import AOS from "aos";
 import Icon from "@mdi/react";
+import { Button } from "react-bootstrap";
 import { mdiPhone, mdiEmail, mdiMapMarker } from "@mdi/js";
 
 AOS.init({
@@ -188,10 +189,13 @@ class ContactUs extends React.Component {
                   </div>
                   <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
-                <div className="text-center">
-                  <button type="submit" className="btn btn-primary   read-more">
+                <div className="text-center mt-2">
+                  <Button
+                    className="  contact-button text-center"
+                    onClick={this.handleOpen}
+                  >
                     Submit
-                  </button>
+                  </Button>
                 </div>
               </form>
             </div>

@@ -117,48 +117,6 @@ const AboutUs = (props) => {
                   </span>
                 </div>
               </div>
-
-              {/* <li className="mt-3">
-                <Icon
-                  path={mdiCheckCircleOutline}
-                  title="User Profile"
-                  size={1}
-                  horizontal
-                  vertical
-                  rotate={180}
-                  color="244887"
-                />{" "}
-                Integrity: we do what we say we do when we say we will do it,
-                the way it should be done.
-              </li>
-              <li className="mt-3">
-                <Icon
-                  path={mdiCheckCircleOutline}
-                  title="User Profile"
-                  size={1}
-                  horizontal
-                  vertical
-                  rotate={180}
-                  color="244887"
-                />{" "}
-                Speed: in today’s competitive world of business and
-                fast-evolving technology, speed is no longer a plus. It is the
-                minimum requirement for admission to the game.
-              </li>
-              <li className="mt-3">
-                <Icon
-                  path={mdiCheckCircleOutline}
-                  title="User Profile"
-                  size={1}
-                  horizontal
-                  vertical
-                  rotate={180}
-                  color="244887"
-                />{" "}
-                Friendly-family: Beyond the transaction, we look to building
-                lifelong relationships with our clients and partners to continue
-                to provide support for long term success.
-              </li> */}
             </ul>
             <a href="/" className="read-more mt-5">
               Read More <i className="icofont-long-arrow-right"></i>

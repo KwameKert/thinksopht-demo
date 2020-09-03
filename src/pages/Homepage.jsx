@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Products from "../components/Products";
 import ContactUs from "../components/ContactUs";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 /**
  * @author
@@ -24,6 +25,7 @@ const Homepage = (props) => {
       <Products />
 
       <ContactUs />
+      <Footer />
     </>
   );
 };

@@ -4,6 +4,7 @@ import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import Products from "../components/Products";
 import ContactUs from "../components/ContactUs";
+import Header from "../components/Header";
 
 /**
  * @author
@@ -13,16 +14,16 @@ import ContactUs from "../components/ContactUs";
 const Homepage = (props) => {
   return (
     <>
+      <Header />
       <Hero />
-      <main id="main">
-        <AboutUs />
 
-        <Services />
+      <AboutUs button="readMore" />
 
-        <Products />
+      <Services />
 
-        <ContactUs />
-      </main>
+      <Products />
+
+      <ContactUs />
     </>
   );
 };

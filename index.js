@@ -1,4 +1,5 @@
 const express = require("express");
+const fileUpload = require("express-fileupload");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -6,6 +7,11 @@ const path = require("path");
 const app = express();
 
 app.use(bodyParser.json());
+app.use(
+  fileUpload({
+    createParentPath: true,
+  })
+);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "build")));
 app.use(cors());
@@ -13,10 +19,6 @@ app.use(cors());
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
-
-// app.get("/contactUS", () => {
-//   resizeBy.send("welcome");
-// });
 
 const transport = {
   host: "smtp.gmail.com", // smtp server host name
@@ -43,7 +45,9 @@ app.post("/api/form", (req, res) => {
   var subject = req.body.subject;
   var phoneNumber = req.body.phoneNumber;
   var message = req.body.message;
-  var content = `fullname: ${fullname} \n email: ${email}  \n subject: ${subject}  \n phone: ${phoneNumber}  \n message: ${message} `;
+  var file = req.body.file;
+  var category = req.body.category;
+  var content = `fullname: ${fullname} \n email: ${email}  \n subject: ${subject}  \n phone: ${phoneNumber}  \n message: ${message} \n file: ${file} \n category: ${category}`;
 
   var mail = {
     from: fullname,
@@ -63,6 +67,27 @@ app.post("/api/form", (req, res) => {
       });
     }
   });
+});
+app.post("/picture", async (req, res) => {
+  try {
+    if (!req.files) {
+      res.send({
+        status: false,
+        message: "no files",
+      });
+    } else {
+      const { picture } = req.files;
+
+      picture.mv("./uploads" + picture.name);
+
+      res.send({
+        status: true,
+        message: "file is uploaded",
+      });
+    }
+  } catch (e) {
+    res.status(500).send(e);
+  }
 });
 
 const PORT = process.env.PORT || 8001;

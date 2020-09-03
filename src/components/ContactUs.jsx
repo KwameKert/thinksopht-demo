@@ -62,7 +62,7 @@ class ContactUs extends React.Component {
   render() {
     return (
       <section id="contact" className="contact section-bg">
-        <div className="container " data-aos="fade-up" data-aos-duration="1000">
+        <div className="container " data-aos="fade-up" data-aos-duration="3000">
           <div className="section-title">
             <h2>Contact Us</h2>
             <p>
@@ -125,7 +125,7 @@ class ContactUs extends React.Component {
           <div className="row ">
             <div className="col-lg-6">
               <form
-                className="bg-white p-4 shadow"
+                className="bg-white p-3 shadow"
                 onSubmit={this.handleSubmit}
                 method="POST "
               >
@@ -144,7 +144,7 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row mt-2">
                   <div className="form-group inputspace">
                     <input
                       placeholder="Email"
@@ -158,22 +158,8 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                {/* <div className="row mt-3">
-                  <div className="form-group inputspace ">
-                    <input
-                      placeholder="phone number"
-                      //ref={register}
-                      type="text"
-                      id="phoneNumber"
-                      name="phoneNumber"
-                      value={this.state.phoneNumber}
-                      onChange={this.handleChange}
-                      className="form-control"
-                    />
-                  </div>
-                </div> */}
-                <div className="row mt-3">
-                  <div className="form-group inputspace ">
+                <div className="row mt-2">
+                  <div className=" form-group inputspace ">
                     <input
                       placeholder="Subject"
                       //ref={register}
@@ -186,7 +172,7 @@ class ContactUs extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row mt-2">
                   <div className="form-group ">
                     <textarea
                       placeholder="Message"
@@ -203,18 +189,15 @@ class ContactUs extends React.Component {
                   <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
                 <div className="text-center">
-                  <button
-                    type="submit"
-                    className="btn btn-primary mt-4  read-more"
-                  >
+                  <button type="submit" className="btn btn-primary   read-more">
                     Submit
                   </button>
                 </div>
               </form>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 ">
               <iframe
-                className="mb-4 mb-lg-0"
+                className="mb-4 mb-lg-0 shadow"
                 title="location_map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.858236178756!2d-0.43632293255097937!3d5.497816435759519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfba3435d13363%3A0x368e67e916f88811!2sMillennium%20City%20High%20St%2C%20Kasoa!5e0!3m2!1sen!2sgh!4v1598555097840!5m2!1sen!2sgh"
                 frameborder="0"

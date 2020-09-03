@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 /**
  * @author
@@ -13,32 +12,33 @@ const Header = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
-              <Link style={{ textDecoration: "none" }} to="/">
+              <a style={{ textDecoration: "none" }} to="/">
                 thinkSopht
-              </Link>
+              </a>
             </h1>
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li className="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#services">Products & Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Opprtunities</a>
+                </li>
 
-            <nav className="navIndex">
-              <Link exact to="/">
-                Home
-              </Link>
-
-              <Link exact to="/about">
-                About
-              </Link>
-
-              <Link exact to="/services">
-                Opportunities
-              </Link>
-
-              <Link exact to="/products">
-                Products & Services
-              </Link>
-
-              <Link exact to="/contactUs">
-                Contact Us
-              </Link>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
             </nav>
+            <a href="#about" class="get-started-btn scrollto">
+              Get Started
+            </a>
           </div>
         </div>
       </div>

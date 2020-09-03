@@ -72,9 +72,8 @@ const AboutUs = (props) => {
                 </div>
                 <div className="col-md-11">
                   <span>
-                    Invent: we are constantly pre-thinking what else could be
-                    done and inventing the solutions for future problems. That’s
-                    our idea of constant improvement.{" "}
+                    Integrity: we do what we say we do when we say we will do
+                    it, the way it should be done.
                   </span>
                 </div>
               </div>
@@ -92,9 +91,9 @@ const AboutUs = (props) => {
                 </div>
                 <div className="col-md-11">
                   <span>
-                    Invent: we are constantly pre-thinking what else could be
-                    done and inventing the solutions for future problems. That’s
-                    our idea of constant improvement.{" "}
+                    Speed: in today’s competitive world of business and
+                    fast-evolving technology, speed is no longer a plus. It is
+                    the minimum requirement for admission to the game.
                   </span>
                 </div>
               </div>
@@ -112,9 +111,9 @@ const AboutUs = (props) => {
                 </div>
                 <div className="col-md-11">
                   <span>
-                    Invent: we are constantly pre-thinking what else could be
-                    done and inventing the solutions for future problems. That’s
-                    our idea of constant improvement.{" "}
+                    Friendly-family: Beyond the transaction, we look to building
+                    lifelong relationships with our clients and partners to
+                    continue to provide support for long term success.
                   </span>
                 </div>
               </div>
@@ -161,7 +160,7 @@ const AboutUs = (props) => {
                 to provide support for long term success.
               </li> */}
             </ul>
-            <a href="#" className="read-more mt-5">
+            <a href="/" className="read-more mt-5">
               Read More <i className="icofont-long-arrow-right"></i>
             </a>
           </div>

@@ -12,7 +12,7 @@ const Header = (props) => {
         <div className="row justify-content-center">
           <div className="col-xl-9 d-flex align-items-center">
             <h1 className="logo mr-auto">
-              <a style={{ textDecoration: "none" }} to="/">
+              <a style={{ textDecoration: "none" }} href="/">
                 thinkSopht
               </a>
             </h1>

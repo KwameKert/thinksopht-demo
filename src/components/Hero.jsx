@@ -1,7 +1,6 @@
 import React from "react";
 import hero from "../assets/img/hero-img.png";
 import AOS from "aos";
-import { Link } from "react-router-dom";
 
 AOS.init({
   startEvent: "DOMContentLoaded",

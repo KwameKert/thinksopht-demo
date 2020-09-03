@@ -1336,7 +1336,7 @@ a:focus {
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1353,7 +1353,7 @@ a:focus {
 }
 
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 2px 0;
   display: flex;
   align-items: center;
 }

@@ -31,22 +31,22 @@ const Footer = (props) => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <a to="/">Home</a>
+                  <h6 href="/">Home</h6>
                 </li>
                 <li>
-                  <a to="/About">About us</a>
+                  <h6 href="/About">About us</h6>
                 </li>
                 <li>
-                  <a to="/Services">Opportunities</a>
+                  <h6 href="/Services">Opportunities</h6>
                 </li>
                 <li>
-                  <a to="/Products">Products & Services</a>
+                  <h6 href="/Products">Products & Services</h6>
                 </li>
                 <li>
-                  <a to="#">Terms of service</a>
+                  <h6 href="#">Terms of service</h6>
                 </li>
                 <li>
-                  <a to="#">Privacy policy</a>
+                  <h6 href="#">Privacy policy</h6>
                 </li>
               </ul>
             </div>
@@ -55,17 +55,17 @@ const Footer = (props) => {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <a to="/Services">UI Internship</a>
+                  <h6 href="/Services">UI Internship</h6>
                 </li>
                 <li>
-                  <a to="Services">Web Development</a>
+                  <h6 href="Services">Web Development</h6>
                 </li>
 
                 <li>
-                  <a to="Services">Digital Marketing</a>
+                  <h6 href="Services">Digital Marketing</h6>
                 </li>
                 <li>
-                  <a to="Services">Graphic Design</a>
+                  <h6 href="Services">Graphic Design</h6>
                 </li>
               </ul>
             </div>
@@ -82,39 +82,39 @@ const Footer = (props) => {
             </div>
           </div>
           <div className="social-links text-center text-md-right pt-3 pt-md-0">
-            <a to="#" className="twitter">
-              <Icon
-                path={mdiTwitter}
-                title="User Profile"
-                size={1}
-                horizontal
-                vertical
-                rotate={180}
-                color="white"
-              />
-            </a>
-            <a to="#" className="facebook">
-              <Icon
-                path={mdiFacebook}
-                title="User Profile"
-                size={1}
-                horizontal
-                vertical
-                rotate={180}
-                color="white"
-              />
-            </a>
-            <a to="#" className="instagram">
-              <Icon
-                path={mdiInstagram}
-                title="User Profile"
-                size={1}
-                horizontal
-                vertical
-                rotate={180}
-                color="white"
-              />
-            </a>
+            {/* < href="#" className="twitter"> */}
+            <Icon
+              path={mdiTwitter}
+              title="User Profile"
+              size={1}
+              horizontal
+              vertical
+              rotate={180}
+              color="white"
+            />
+            {/* </a> */}
+            {/* <a href="#" className="facebook"> */}
+            <Icon
+              path={mdiFacebook}
+              title="User Profile"
+              size={1}
+              horizontal
+              vertical
+              rotate={180}
+              color="white"
+            />
+            {/* </a>
+            <a href="#" className="instagram"> */}
+            <Icon
+              path={mdiInstagram}
+              title="User Profile"
+              size={1}
+              horizontal
+              vertical
+              rotate={180}
+              color="white"
+            />
+            {/* </a> */}
           </div>
         </div>
       </div>

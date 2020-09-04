@@ -13,7 +13,6 @@ const App = () => (
   <ScrollingProvider>
     <Header />
     <Hero />
-
     <Section id="home"></Section>
     <Section id="about">
       <AboutUs />

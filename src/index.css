@@ -220,16 +220,17 @@ section {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
-.navIndex a {
+.navIndex li {
   text-decoration: none;
+  cursor: pointer;
 }
-.navIndex a:hover {
+.navIndex li:hover {
   text-decoration: underline;
 }
-.navIndex a:active,
-a:focus {
+.navIndex li:active,
+li:focus {
   text-decoration: underline;
-  color: white;
+  color: red;
   font-weight: bolder;
 }
 
@@ -247,9 +248,10 @@ a:focus {
   position: relative;
   white-space: nowrap;
   padding: 10px 0 10px 24px;
+  color: white;
 }
 
-.nav-menu a {
+.nav-menu li {
   display: block;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
@@ -260,7 +262,7 @@ a:focus {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu > ul > li > a:before {
+.nav-menu > ul > li > li:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -273,17 +275,17 @@ a:focus {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .active > a:before {
+.nav-menu li:hover:before,
+.nav-menu li:hover > li:before,
+.nav-menu .active > li:before {
   visibility: visible;
   width: 100%;
 }
 
-.nav-menu a:hover,
-.nav-menu .active > a,
-.nav-menu li:hover > a {
-  color: #fff;
+.nav-menu li:hover,
+.nav-menu .active > li,
+.nav-menu li:hover > li {
+  color: black;
 }
 
 .nav-menu .drop-down ul {
@@ -311,20 +313,20 @@ a:focus {
   position: relative;
 }
 
-.nav-menu .drop-down ul a {
+.nav-menu .drop-down ul li {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
   color: #2c4964;
 }
 
-.nav-menu .drop-down ul a:hover,
-.nav-menu .drop-down ul .active > a,
-.nav-menu .drop-down ul li:hover > a {
+.nav-menu .drop-down ul li:hover,
+.nav-menu .drop-down ul .active > li,
+.nav-menu .drop-down ul li:hover > li {
   color: white;
 }
 
-.nav-menu .drop-down > a:after {
+.nav-menu .drop-down > li:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
@@ -341,11 +343,11 @@ a:focus {
   left: 100%;
 }
 
-.nav-menu .drop-down .drop-down > a {
+.nav-menu .drop-down .drop-down > li {
   padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
+.nav-menu .drop-down .drop-down > li:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
@@ -359,7 +361,7 @@ a:focus {
   .nav-menu .drop-down .drop-down:hover > ul {
     left: -100%;
   }
-  .nav-menu .drop-down .drop-down > a:after {
+  .nav-menu .drop-down .drop-down > li:after {
     content: "\ea9d";
   }
 }
@@ -496,7 +498,7 @@ a:focus {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: black;
 }
 #hero {
   width: 100%;
@@ -630,8 +632,7 @@ a:focus {
   }
 }
 .about {
-  padding: 120px 0;
-  min-height: 100vh;
+  padding: 0px 0;
 }
 
 .about .content h5 {
@@ -687,6 +688,10 @@ a:focus {
   position: absolute;
   right: 20px;
   top: 12px;
+}
+section {
+  padding: 50px 0;
+  overflow: hidden;
 }
 
 .form-control {
@@ -1298,6 +1303,7 @@ a:focus {
 }
 #footer {
   color: #fff;
+  cursor: pointer;
   font-size: 14px;
   background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%),
     url("../src/assets/img/hero-bg.jpg") center center no-repeat;
@@ -1351,7 +1357,20 @@ a:focus {
   font-size: 18px;
   line-height: 1;
 }
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
 
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+}
 #footer .footer-top .footer-links ul li {
   padding: 2px 0;
   display: flex;

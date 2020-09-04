@@ -14,7 +14,7 @@ AOS.init({
 const Products = (props) => {
   return (
     <div>
-      <section id="portfolio" className="portfolio">
+      <section id="products" className="portfolio">
         <div className="container" data-aos="fade-up" data-aos-duration="3000">
           <div className="section-title">
             <h2>Product & Services</h2>

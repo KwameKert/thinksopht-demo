@@ -17,10 +17,10 @@ const AboutUs = (props) => {
   return (
     <section id="about" className="about">
       <div className="container">
-        <div className="row section-title">
-          <h2>About Us</h2>
-        </div>
         <div className="row">
+          <div className="row section-title">
+            <h2>About Us</h2>
+          </div>
           <div
             className="col-lg-6 order-1 order-lg-2"
             data-aos="zoom-in"

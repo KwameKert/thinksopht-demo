@@ -31,16 +31,16 @@ const Footer = (props) => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <h6 href="/">Home</h6>
+                  <h6 href="#">Home</h6>
                 </li>
                 <li>
-                  <h6 href="/About">About us</h6>
+                  <h6 href="#">About us</h6>
                 </li>
                 <li>
-                  <h6 href="/Services">Opportunities</h6>
+                  <h6 href="#">Opportunities</h6>
                 </li>
                 <li>
-                  <h6 href="/Products">Products & Services</h6>
+                  <h6 href="/#">Products & Services</h6>
                 </li>
                 <li>
                   <h6 href="#">Terms of service</h6>
@@ -55,17 +55,17 @@ const Footer = (props) => {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <h6 href="/Services">UI Internship</h6>
+                  <h6 href="#">UI Internship</h6>
                 </li>
                 <li>
-                  <h6 href="Services">Web Development</h6>
+                  <h6 href="#">Web Development</h6>
                 </li>
 
                 <li>
-                  <h6 href="Services">Digital Marketing</h6>
+                  <h6 href="#">Digital Marketing</h6>
                 </li>
                 <li>
-                  <h6 href="Services">Graphic Design</h6>
+                  <h6 href="#">Graphic Design</h6>
                 </li>
               </ul>
             </div>

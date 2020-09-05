@@ -21,7 +21,22 @@ const Header = (props) => {
 
             <Navbar className="nav-menu" bg="" variant="dark">
               <Nav className="mr-auto">
-                {/* <Nav.Link className="nav-menu">Home</Nav.Link> */}
+                <Nav.Link
+                  style={{
+                    color: "#ACB8D6",
+                    textDecoration: "none",
+                    fontWeight: "600",
+                    fontSize: "17px",
+                    fontfamily: "Open Sans sansSerif,",
+                    position: "absolute",
+                    top: "-2px",
+                    left: "-70px",
+                  }}
+                  href="/"
+                >
+                  Home
+                </Nav.Link>
+
                 <SectionLinks>
                   {({ allLinks }) =>
                     Object.entries(allLinks).map(([key, link]) => (

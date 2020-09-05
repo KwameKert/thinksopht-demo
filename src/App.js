@@ -10,10 +10,9 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 const App = () => (
-  <ScrollingProvider>
+  <ScrollingProvider id="home">
     <Header />
     <Hero />
-    <Section id="home"></Section>
     <Section id="about">
       <AboutUs />
     </Section>

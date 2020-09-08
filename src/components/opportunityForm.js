@@ -5,13 +5,12 @@ export default class OpportunityForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fullname: "",
+      name: "",
       email: "",
-      phoneNumber: "",
+      address: "",
       category: "",
-      file: "",
+      cv: "",
       sent: false,
-      show: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -23,7 +22,7 @@ export default class OpportunityForm extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    fetch("/api/form", {
+    fetch("/mail/opportunity/", {
       method: "POST",
       body: JSON.stringify(this.state),
       headers: {
@@ -47,8 +46,8 @@ export default class OpportunityForm extends Component {
       fullname: "",
       email: "",
       phoneNumber: "",
-      category: "",
-      file: "",
+      subject: "",
+      message: "",
     });
     setTimeout(() => {
       this.setState({ sent: false });
@@ -66,6 +65,7 @@ export default class OpportunityForm extends Component {
       show: true,
     });
   };
+
   render() {
     return (
       <>
@@ -82,9 +82,11 @@ export default class OpportunityForm extends Component {
                 <div className="form-group">
                   <input
                     placeholder="Full Name"
-                    name="fullname"
+                    name="name"
+                    id="name"
+                    type="text"
                     className="form-control"
-                    value={this.state.fullname}
+                    value={this.state.name}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -94,6 +96,8 @@ export default class OpportunityForm extends Component {
                   <input
                     placeholder="Email"
                     name="email"
+                    id="email"
+                    type="text"
                     className="form-control"
                     value={this.state.email}
                     onChange={this.handleChange}
@@ -104,9 +108,11 @@ export default class OpportunityForm extends Component {
                 <div className="form-group">
                   <input
                     placeholder="Phone Number"
-                    name="phoneNumber"
+                    name="address"
+                    id="address"
+                    type="text"
                     className="form-control"
-                    value={this.state.phoneNumber}
+                    value={this.state.address}
                     onChange={this.handleChange}
                   />
                 </div>
@@ -125,6 +131,8 @@ export default class OpportunityForm extends Component {
                     <input
                       placeholder="Select Category"
                       name="category"
+                      id="category"
+                      type="text"
                       className="form-control opportunityForm"
                       value={this.state.category}
                       onChange={this.handleChange}
@@ -135,16 +143,16 @@ export default class OpportunityForm extends Component {
               <div className="row mt-3">
                 <div className=" form-group">
                   <input
-                    name="file"
+                    name="cv"
+                    id="cv"
                     type="file"
                     className="form-control"
-                    value={this.state.file}
+                    value={this.state.cv}
                     onChange={this.handleChange}
                   />
+                  <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
               </div>
-
-              <div>{this.state.sent ? " message has been sent" : ""}</div>
 
               <div className="row">
                 <input

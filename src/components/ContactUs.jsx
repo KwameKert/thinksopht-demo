@@ -1,21 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import AOS from "aos";
 import Icon from "@mdi/react";
-import { Button } from "react-bootstrap";
 import { mdiPhone, mdiEmail, mdiMapMarker } from "@mdi/js";
+import axios from "axios";
 
 AOS.init({
   startEvent: "DOMContentLoaded",
 });
 
-class ContactUs extends React.Component {
+class ContactUs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fullname: "",
+      name: "",
       email: "",
-      phoneNumber: "",
-      subject: "",
+      address: "",
       message: "",
       sent: false,
     };
@@ -27,39 +26,38 @@ class ContactUs extends React.Component {
     e.preventDefault();
     this.setState({ [e.target.name]: e.target.value });
   };
-  handleSubmit = (e) => {
-    e.preventDefault();
-    fetch("/api/form", {
+  handleSubmit = () => {
+    axios({
       method: "POST",
-      body: JSON.stringify(this.state),
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+      url: "/mail/contact/",
+      data: {
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
+        address: this.state.address,
       },
-    })
-      .then((response) => response.json())
-      .then((response) => {
-        if (response.status === "success") {
-          this.setState({ sent: true });
-          this.resetForm();
-        } else if (response.status === "fail") {
-          alert("Message failed to send.");
-        }
-      });
+    }).then((response) => {
+      if (response.data.msg === "success") {
+        this.setState({ sent: true });
+        this.resetForm();
+      } else if (response.data.msg === "fail") {
+        alert("Oops, something went wrong. Try again");
+      }
+    });
   };
 
   resetForm = () => {
     this.setState({
       fullname: "",
       email: "",
-      phoneNumber: "",
-      subject: "",
+      address: "",
       message: "",
     });
     setTimeout(() => {
       this.setState({ sent: false });
     }, 3000);
   };
+
   render() {
     return (
       <section id="contact" className="contact section-bg">
@@ -128,75 +126,62 @@ class ContactUs extends React.Component {
               <form
                 className="bg-white p-3 shadow"
                 onSubmit={this.handleSubmit}
-                method="POST "
+                method="POST"
               >
-                <div className="row ">
-                  <div className="form-group inputspace ">
-                    {/* <label htmlFor="fullname">Fullname</label> */}
-                    <input
-                      placeholder="Fullname"
-                      //ref={register}
-                      type="text"
-                      id="fullname"
-                      name="fullname"
-                      value={this.state.fullname}
-                      onChange={this.handleChange}
-                      className="form-control"
-                    />
-                  </div>
+                <div className="form-group mt-2">
+                  {/* <label htmlFor="name">Name</label> */}
+                  <input
+                    value={this.state.name}
+                    onChange={this.handleChange}
+                    id="name"
+                    placeholder="Name"
+                    name="name"
+                    type="text"
+                    className="form-control"
+                  />
                 </div>
-                <div className="row mt-2">
-                  <div className="form-group inputspace">
-                    <input
-                      placeholder="Email"
-                      //ref={register}
-                      type="text"
-                      id="email"
-                      name="email"
-                      value={this.state.email}
-                      onChange={this.handleChange}
-                      className="form-control"
-                    />
-                  </div>
+                <div className="form-group mt-2">
+                  {/* <label htmlFor="email">email</label> */}
+                  <input
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    type="text"
+                    className="form-control "
+                  />
                 </div>
-                <div className="row mt-2">
-                  <div className=" form-group inputspace ">
-                    <input
-                      placeholder="Subject"
-                      //ref={register}
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      value={this.state.subject}
-                      onChange={this.handleChange}
-                      className="form-control"
-                    />
-                  </div>
+                <div className="form-group mt-2">
+                  {/* <label htmlFor="contact">Address</label> */}
+                  <input
+                    value={this.state.address}
+                    onChange={this.handleChange}
+                    id="address"
+                    placeholder="address"
+                    name="address"
+                    type="text"
+                    className="form-control "
+                  />
                 </div>
-                <div className="row mt-2">
-                  <div className="form-group ">
-                    <textarea
-                      placeholder="Message"
-                      //ref={register}
-                      type="text"
-                      id="message"
-                      name="message"
-                      className="form-control text-input"
-                      value={this.state.message}
-                      onChange={this.handleChange}
-                      rows="4"
-                    />
-                  </div>
+                <div className="form-group mt-3">
+                  <textarea
+                    value={this.state.message}
+                    onChange={this.handleChange}
+                    id="message"
+                    placeholder="Message"
+                    name="message"
+                    type="text"
+                    htmlFor="message"
+                    lassName="form-control"
+                    rows="4"
+                  ></textarea>
                   <div>{this.state.sent ? " message has been sent" : ""}</div>
                 </div>
-                <div className="text-center mt-2">
-                  <Button
-                    className="  contact-button text-center"
-                    onClick={this.handleOpen}
-                  >
-                    Submit
-                  </Button>
-                </div>
+
+                <button className="btn btn-primary mt-4 mb-3 apply-form btn-lg mx-auto my-5">
+                  submit
+                </button>
               </form>
             </div>
             <div className="col-lg-6 ">

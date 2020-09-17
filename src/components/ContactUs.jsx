@@ -60,7 +60,7 @@ class ContactUs extends Component {
 
   render() {
     return (
-      <section id="contact" className="contact section-bg">
+      <section id="contact" className="contact section-bg ">
         <div className="container " data-aos="fade-up" data-aos-duration="3000">
           <div className="section-title">
             <h2>Contact Us</h2>

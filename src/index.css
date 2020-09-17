@@ -109,7 +109,7 @@ h6 {
 }
 
 /* section {
-  padding: 0px 0;
+  padding: 50px 50px;
   overflow: hidden;
 } */
 /* section {
@@ -119,7 +119,7 @@ h6 {
 
 .section-bg {
   background-color: #f9f8ff;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .section-title {
@@ -159,7 +159,8 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
-  background-color: #2a5298e1;
+  background-color: #2a5298;
+
   /* background-image: linear-gradient(
     to top,
     #1e3c72 0%,
@@ -620,6 +621,7 @@ li:focus {
 }
 .about {
   padding: 0px 0;
+  margin-top: 30px;
 }
 
 .about .content h5 {
@@ -825,6 +827,7 @@ section {
     ),
     url("../src/assets/img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
+  margin-top: 0px;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -1068,6 +1071,10 @@ section {
   opacity: 1;
   bottom: calc(50% - 50px);
 }
+#contact {
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1295,11 +1302,14 @@ section {
   background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%),
     url("../src/assets/img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 #footer .footer-top {
-  padding: 30px 0 30px 0;
+  padding: 40px 0 40px 0;
   position: relative;
+  margin-top: 0px;
 }
 
 #footer .footer-top .footer-contact {

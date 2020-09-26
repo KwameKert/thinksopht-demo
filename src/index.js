@@ -2,16 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import "aos/dist/aos.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import * as serviceWorker from "./serviceWorker";
-//import "./assets/js/main.js";
-
-// $(window).scroll(function () {
-//   if ($(this).scrollTop() > 100) {
-//     $("#header").addClass("header-scrolled");
-//   } else {
-//     $("#header").removeClass("header-scrolled");
-//   }
-// });
 
 ReactDOM.render(
   <React.StrictMode>
